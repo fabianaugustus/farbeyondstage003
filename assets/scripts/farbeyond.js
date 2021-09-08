@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         function moveChimney() {
             // Sets speed for associated object
             // Replace the following code with Switch case
-            if (result < 2) {
+            if (result < 20) {
             chimneyLeft -=2
             movinghousesLeft -=2
             cloudOneLeft -=1
