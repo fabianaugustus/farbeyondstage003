@@ -1,0 +1,195 @@
+body {
+    display: flex;
+}
+
+.farbeyond-container {
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 80px;
+}
+
+.border-left {
+    width: 75px;
+    height: 750px;
+    border-right: 10px solid blue;
+    position: absolute;
+    background-color: white;
+    z-index: +3;
+    top: 28px;
+    left: -3px;
+}
+
+.topLeftCorner {
+    margin: -10px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    z-index: +1;
+}
+
+.block {
+    width: 600px;
+    height: 28px;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    z-index: +3;
+}
+
+.border-right {
+    width: 320px;
+    height: 750px;
+    border-left: 10px solid blue;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: 28px;
+    left: 580px;
+
+}
+
+.border-top {
+    width: 600px;
+    height: 50px;
+    border-bottom: 10px solid blue;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: -30px;
+}
+
+.border-bottom {
+    display: flex;
+    justify-content: center;
+    border-top: 10px solid blue;
+    border-bottom: 10px solid blue;
+    /* border: 10px solid #1C6EA4; */
+    align-items: center;
+    width: 500px;
+    height: 145px;
+    color: #FF0000;
+    font-size: 53px;
+    font-weight: bold;
+    text-shadow: 10px 10px 15px darkblue;
+    position: absolute;
+    background-color: lightskyblue;
+    z-index: +3;
+    bottom: -40px;
+}
+
+.sky {
+    background-image: url('/assets/images/sky.png');
+    width: 500px;
+    height: 580px;
+    position: absolute;
+}
+
+.fabian {
+    background-image: url('/assets/images/son-of-fabian.gif');
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    z-index: +1;
+}
+
+.houses {
+    background-image: url('/assets/images/houses.png');
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 500px;
+}
+
+.movinghouses {
+    background-image: url('/assets/images/movinghouses.png');
+    width: 500px;
+    height: 140px;
+    position: absolute;
+}
+
+.cloudone {
+    background-image: url('/assets/images/cloudone.png');
+    width: 100px;
+    height: 27px;
+    position: absolute;
+    z-index: +2;
+}
+
+.cloudtwo {
+    background-image: url('/assets/images/cloudtwo.png');
+    width: 100px;
+    height: 27px;
+    position: absolute;
+    z-index: +2;
+}
+
+.cloudthree {
+    background-image: url('/assets/images/cloudthree.png');
+    width: 100px;
+    height: 27px;
+    position: absolute;
+    z-index: +1;
+}
+
+.cloudfour {
+    background-image: url('/assets/images/cloudthree.png');
+    width: 75px;
+    height: 27px;
+    position: absolute;
+    z-index: +2;
+}
+
+.cloudfive {
+    background-image: url('/assets/images/cloudfive.png');
+    width: 75px;
+    height: 27px;
+    position: absolute;
+    z-index: +2;
+}
+.cloudsix {
+    background-image: url('/assets/images/cloudsix.png');
+    width: 75px;
+    height: 27px;
+    position: absolute;
+    z-index: +2;
+}
+
+.chimney {
+    background-image: url('/assets/images/chimney.png');
+    width: 60px;
+    height: 300px;
+    position: absolute;
+    z-index: +2;
+}
+
+.owls {
+    background-image: url('/assets/images/owls.png');
+    transform: rotate(10deg );
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.scoreBoard {
+    margin-top: 20px;
+    border: solid 10px blue;
+    border-color: blue;
+    margin-left: 600px;
+    text-align: center;    
+    width: 250px;
+    height: 725px;
+    color: black;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px lightyellow;
+    background-image: url('/assets/images/sky.png');
+    z-index: +3;
+}
+
+.rules {
+    font-size: xx-large;
+    color: white;
+    text-shadow: 10px 20px 15px gray;
+}
