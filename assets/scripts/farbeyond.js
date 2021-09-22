@@ -120,81 +120,149 @@ document.addEventListener('DOMContentLoaded' , () => {
         cloudsix.style.bottom = cloudBottom + 35 + 'px'
 
         // Responsible for all movement in this game.
+
         function moveChimney() {
-            // Sets speed for associated object
-            // Replace the following code with Switch case
-            if (result <= 2) {
-            chimneyLeft -=1.5
-            movinghousesLeft -=1.5
-            if (chimneyLeft > 182 && chimneyLeft < 185) {
-                result = result + 1
-                score.textContent = result
-            }
-            } else if (result > 2 && result <= 4) {
+            if (result <= 5) {
+                
+                chimneyLeft -=1.3
+                movinghousesLeft -=1.3
+                cloudOneLeft -=1
+                cloudTwoLeft -=2.5
+                cloudThreeLeft -=1.5
+                cloudFourLeft -=2.7
+                cloudFiveLeft -=2.4
+                cloudSixLeft -=2.3
+                if (chimneyLeft > 183 && chimneyLeft < 185) {
+                    result = result + 1
+                    score.textContent = result
+                }
+                } else if (result > 5 && result <= 10) {
                 gameLevel.textContent = "Far Beyond - Level 2"
-                chimneyLeft -=1.6
-                movinghousesLeft -=1.6
-                if (chimneyLeft > 184 && chimneyLeft < 185) {
-                    result = result + 1
-                    score.textContent = result
-            }
-            } else if (result > 4 && result <= 6) {
+                    chimneyLeft -=1.5
+                    movinghousesLeft -=1.5
+                    cloudOneLeft -=1.6
+                    cloudTwoLeft -=2.1
+                    cloudThreeLeft -=1.8
+                    cloudFourLeft -=2.9
+                    cloudFiveLeft -=2.6
+                    cloudSixLeft -=2
+                    if (chimneyLeft > 183 && chimneyLeft < 185) {
+                        result = result + 1
+                        score.textContent = result
+                }
+                } else if (result > 10 && result <= 15) {
                 gameLevel.textContent = "Far Beyond - Level 3"
-                chimneyLeft -=2.0
-                movinghousesLeft -=2.0
-                if (chimneyLeft > 183 && chimneyLeft < 185) {
-                    result = result + 1
-                    score.textContent = result
-            }
-            } else if (result > 6 && result <= 8) {
+                    chimneyLeft -=1.7
+                    movinghousesLeft -=1.7
+                    cloudOneLeft -=2
+                    cloudTwoLeft -=1.5
+                    cloudThreeLeft -=2.2
+                    cloudFourLeft -=3.5
+                    cloudFiveLeft -=1.5
+                    cloudSixLeft -=2.5
+                    if (chimneyLeft > 183 && chimneyLeft < 185) {
+                        result = result + 1
+                        score.textContent = result
+                }
+                } else if (result > 15 && result <= 20) {
                 gameLevel.textContent = "Far Beyond - Level 4"
-                chimneyLeft -=2.3
-                movinghousesLeft -=2.3
-                if (chimneyLeft > 183 && chimneyLeft < 185) {
-                    result = result + 1
-                    score.textContent = result
-            }
-            } else if (result > 8 && result <= 10) {
+                    chimneyLeft -=1.9
+                    movinghousesLeft -=1.9
+                    cloudOneLeft -=1.4
+                    cloudTwoLeft -=2.5
+                    cloudThreeLeft -=2.8
+                    cloudFourLeft -=2.1
+                    cloudFiveLeft -=2.6
+                    cloudSixLeft -=1.5
+                    if (chimneyLeft > 182 && chimneyLeft < 185) {
+                        result = result + 1
+                        score.textContent = result
+                }
+                } else if (result > 20 && result <= 25) {
                 gameLevel.textContent = "Far Beyond - Level 5"
-                chimneyLeft -=2.4
-                movinghousesLeft -=2.4
-                if (chimneyLeft > 183 && chimneyLeft < 185) {
-                    result = result + 1
-                    score.textContent = result
-            }
-            } else if (result > 10 && result <= 12) {
+                    chimneyLeft -=2.1
+                    movinghousesLeft -=2.1
+                    cloudOneLeft -=1.6
+                    cloudTwoLeft -=2.4
+                    cloudThreeLeft -=1.8
+                    cloudFourLeft -=2.9
+                    cloudFiveLeft -=2.6
+                    cloudSixLeft -=2
+                    if (chimneyLeft > 183 && chimneyLeft < 185) {
+                        result = result + 1
+                        score.textContent = result
+                }
+                } else if (result > 25 && result <= 30) {
                 gameLevel.textContent = "Far Beyond - Level 6"
-                chimneyLeft -=2.6
-                movinghousesLeft -=2.6
+                    chimneyLeft -=2.4
+                    movinghousesLeft -=2.4
+                    cloudOneLeft -=1
+                    cloudTwoLeft -=2.8
+                    cloudThreeLeft -=1.5
+                    cloudFourLeft -=2.7
+                    cloudFiveLeft -=2
+                    cloudSixLeft -=2.1
+                    if (chimneyLeft > 183 && chimneyLeft < 185) {
+                        result = result + 1
+                        score.textContent = result
+                }
+                } else if (result > 30 && result <= 35) {
+                gameLevel.textContent = "Far Beyond - Level 7"
+                    chimneyLeft -=2.7
+                    movinghousesLeft -=2.7
+                    cloudOneLeft -=1.4
+                    cloudTwoLeft -=2.2
+                    cloudThreeLeft -=2.4
+                    cloudFourLeft -=2.1
+                    cloudFiveLeft -=2
+                    cloudSixLeft -=1.5
                 if (chimneyLeft > 182 && chimneyLeft < 185) {
                     result = result + 1
                     score.textContent = result
-            }   
-            
-            
-            /* To add more levels, change the "Level" number,
-                increase both the "chimneyLeft" and "movingHousesLeft"
-                speeds and add more "else ifs" and increase the first
-                chimneyLeft number in the nested "if" statement */
-
-                
-            } else {
-                gameLevel.textContent = "Far Beyond - Level 7"
-                chimneyLeft -=3.5
-                movinghousesLeft -=3.5
-                if (chimneyLeft > 181 && chimneyLeft < 185) {
+                }
+                } else if (result > 35 && result <= 40) {
+                gameLevel.textContent = "Far Beyond - Level 8"
+                    chimneyLeft -=3.2
+                    movinghousesLeft -=3.2
+                    cloudOneLeft -=1
+                    cloudTwoLeft -=2.5
+                    cloudThreeLeft -=1.5
+                    cloudFourLeft -=2.7
+                    cloudFiveLeft -=2.4
+                    cloudSixLeft -=2.3
+                if (chimneyLeft > 182 && chimneyLeft < 185) {
+                    result = result + 1
+                    score.textContent = result
+                }
+                } else if (result > 40 && result <= 45) {
+                gameLevel.textContent = "Far Beyond - Level 9"
+                chimneyLeft -=3.8
+                movinghousesLeft -=3.8
+                    cloudOneLeft -=1.6
+                    cloudTwoLeft -=2.1
+                    cloudThreeLeft -=1.8
+                    cloudFourLeft -=2.9
+                    cloudFiveLeft -=2.6
+                    cloudSixLeft -=2
+                if (chimneyLeft > 182 && chimneyLeft < 185) {
+                    result = result + 1
+                    score.textContent = result
+                }
+                } else {
+                gameLevel.textContent = "Far Beyond - Level 10"
+                chimneyLeft -=4.9
+                movinghousesLeft -=4.9
+                    cloudOneLeft -=1.4
+                    cloudTwoLeft -=2.5
+                    cloudThreeLeft -=2.8
+                    cloudFourLeft -=2.1
+                    cloudFiveLeft -=2.6
+                    cloudSixLeft -=1.5
+                if (chimneyLeft > 180 && chimneyLeft < 185) {
                     result = result + 1
                     score.textContent = result
                 }
             }
-
-            
-            cloudOneLeft -=1
-            cloudTwoLeft -=2.5
-            cloudThreeLeft -=1.5
-            cloudFourLeft -=2.7
-            cloudFiveLeft -=2.4
-            cloudSixLeft -=2.3
             
             chimney.style.left = chimneyLeft + 'px'
             owls.style.left = chimneyLeft + 'px'
@@ -205,14 +273,11 @@ document.addEventListener('DOMContentLoaded' , () => {
             cloudfour.style.left = cloudFourLeft + 'px'
             cloudfive.style.left = cloudFiveLeft + 'px'
             cloudsix.style.left = cloudSixLeft + 'px'
-
-            
             
             // Causes object to cease to exist after exited to the left of screen
-            if (chimneyLeft === -2000) {
+            if (chimneyLeft === -1000) {
                 /* result = result + 1
                 score.textContent = result */
-
 
                 clearInterval(timerId)
                 gameDisplay.removeChild(chimney)
@@ -226,8 +291,6 @@ document.addEventListener('DOMContentLoaded' , () => {
                 gameDisplay.removeChild(cloudsix)
             }
 
-            
-
             // Ends Game
                 if (
                 chimneyLeft > 200 && chimneyLeft < 270 && fabianLeft === 220 &&
@@ -240,15 +303,24 @@ document.addEventListener('DOMContentLoaded' , () => {
 
         // Sets "timerId" interval (Initial setting = 20) // for level five change the "20" to "18" // for level six change the "20" to "16"
         // for level seven change the "20" to "14" // for level eight change the "20" to "12"
-        let timerId = setInterval(moveChimney, 10)
+        if (result <= 10) {
+            chimneySpeed = 5
+        } else if (result > 10 && result <= 20) {
+            chimneySpeed = 7
+        } else if (result > 20 && result <= 30) {
+            chimneySpeed = 9
+        } else if (result > 30 && result <= 40) {
+            chimneySpeed = 11
+        } else {
+            chimneySpeed = 13
+        }
+        let timerId = setInterval(moveChimney, chimneySpeed)
         
         // Set interval between each Chimney
         if (!isGameOver) setTimeout(generateChimney, 3000)
     }
     // Calls the generateChimney() function
     generateChimney()
-
-    
 
     function gameOver() {
         clearInterval(gameTimerId)
