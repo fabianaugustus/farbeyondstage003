@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                     score.textContent = result
                 }
                 } else if (result > 5 && result <= 10) {
+                gameLevel.style.color = 'blue'
                 gameLevel.textContent = "Far Beyond - Level 2"
                     chimneyLeft -=1.5
                     movinghousesLeft -=1.5
@@ -151,6 +152,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                         score.textContent = result
                 }
                 } else if (result > 10 && result <= 15) {
+                gameLevel.style.color = 'red'
                 gameLevel.textContent = "Far Beyond - Level 3"
                     chimneyLeft -=1.7
                     movinghousesLeft -=1.7
@@ -165,6 +167,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                         score.textContent = result
                 }
                 } else if (result > 15 && result <= 20) {
+                gameLevel.style.color = 'blue'
                 gameLevel.textContent = "Far Beyond - Level 4"
                     chimneyLeft -=1.9
                     movinghousesLeft -=1.9
@@ -179,6 +182,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                         score.textContent = result
                 }
                 } else if (result > 20 && result <= 25) {
+                gameLevel.style.color = 'red'
                 gameLevel.textContent = "Far Beyond - Level 5"
                     chimneyLeft -=2.1
                     movinghousesLeft -=2.1
@@ -193,6 +197,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                         score.textContent = result
                 }
                 } else if (result > 25 && result <= 30) {
+                gameLevel.style.color = 'blue'
                 gameLevel.textContent = "Far Beyond - Level 6"
                     chimneyLeft -=2.4
                     movinghousesLeft -=2.4
@@ -207,6 +212,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                         score.textContent = result
                 }
                 } else if (result > 30 && result <= 35) {
+                gameLevel.style.color = 'red'
                 gameLevel.textContent = "Far Beyond - Level 7"
                     chimneyLeft -=2.7
                     movinghousesLeft -=2.7
@@ -221,6 +227,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                     score.textContent = result
                 }
                 } else if (result > 35 && result <= 40) {
+                gameLevel.style.color = 'blue'
                 gameLevel.textContent = "Far Beyond - Level 8"
                     chimneyLeft -=3.2
                     movinghousesLeft -=3.2
@@ -235,6 +242,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                     score.textContent = result
                 }
                 } else if (result > 40 && result <= 45) {
+                gameLevel.style.color = 'red'
                 gameLevel.textContent = "Far Beyond - Level 9"
                 chimneyLeft -=3.8
                 movinghousesLeft -=3.8
@@ -249,6 +257,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                     score.textContent = result
                 }
                 } else {
+                gameLevel.style.color = 'blue'
                 gameLevel.textContent = "Far Beyond - Level 10"
                 chimneyLeft -=4.9
                 movinghousesLeft -=4.9
@@ -306,13 +315,13 @@ document.addEventListener('DOMContentLoaded' , () => {
         if (result <= 10) {
             chimneySpeed = 5
         } else if (result > 10 && result <= 20) {
-            chimneySpeed = 7
+            chimneySpeed = 6
         } else if (result > 20 && result <= 30) {
-            chimneySpeed = 9
+            chimneySpeed = 7
         } else if (result > 30 && result <= 40) {
-            chimneySpeed = 11
+            chimneySpeed = 9
         } else {
-            chimneySpeed = 13
+            chimneySpeed = 10
         }
         let timerId = setInterval(moveChimney, chimneySpeed)
         
